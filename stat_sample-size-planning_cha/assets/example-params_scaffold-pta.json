@@ -1,0 +1,37 @@
+{
+  "studyName": "Scaffold vs. PTA – Efficacy Study (12-month primary patency)",
+  "preparedFor": "Gökhan Özcan",
+  "version": "1.0",
+  "effectiveDate": "2026-09-01",
+  "author": "Statistical Analysis (Biostatistics Team)",
+  "reviewer": "Clinical Trial Unit",
+  "approvalDate": "TBD",
+  
+  "primaryEndpoint": "12-month primary patency (binary: patent yes/no)",
+  "designSummary": "Prospective, randomized, controlled trial (Scaffold vs. PTA); allocation ratio 1:1 and 2:1 scenarios evaluated",
+  
+  "software": "R (base R v4.x; no add-on packages required)",
+  "method": "Unpooled Z-test (binary, superiority); Farrington-Manning (binary, non-inferiority)",
+  
+  "testType": "Superiority (primary) + Non-Inferiority (sensitivity)",
+  "endpointType": "Binary (primary patency success/failure)",
+  "alpha": "0.025 (one-sided)",
+  "power": "80% (scenario S1) and 90% (scenario S2)",
+  "allocationRatio": "1:1 (Scaffold : PTA) — also evaluated 2:1",
+  "dropout": "20%",
+  "analysisSet": "ITT (Intent-to-Treat); PP sensitivity planned",
+  
+  "controlRate": "55% (PTA at 12 months)",
+  "treatmentRate": "70% (Scaffold at 12 months)",
+  "effectSize": "+15 percentage points (70% - 55%)",
+  "niMargin": "-10% (non-inferiority threshold: Scaffold ≥ 45% if PTA = 55%)",
+  
+  "nBeforeDropout": "216 per group (80% power, 1:1 allocation, superiority)",
+  "nAfterDropout": "270 per group (after 20% dropout adjustment)",
+  "totalN": "540 patients (both groups combined with dropout adjustment)",
+  "ci95": "[+5%, +25%] at 80% power",
+  
+  "formulaName": "Unpooled Z-test for proportions",
+  "calculatedN": "216",
+  "adjustedN": "270"
+}
