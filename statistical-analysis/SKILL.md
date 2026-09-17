@@ -109,6 +109,31 @@ def data_profile(df, target_vars=None):
 
 ---
 
+## Fähigkeiten: Variablenidentifikation (AV / UV / Kovariaten)
+
+**Gilt für**: jede Analyse mit Hypothesentest (t-Test, ANOVA, Regression, Chi-Quadrat, Korrelation, Überlebenszeitanalyse etc.) **und** für jede Fallzahl-/Power-Berechnung (Zahlenprognose) — letztere auch ohne vorliegenden Datensatz.
+
+**Regel**: Bevor eine Methode ausgeführt oder eine Fallzahl berechnet wird, müssen aus dem Auftragstext, den Nutzerfragen oder dem Analyseplan explizit identifiziert und dokumentiert werden:
+- **Abhängige Variable(n)** (AV / Dependent Variable, DV) — die Zielgröße, auf die sich die Hypothese bezieht.
+- **Unabhängige Variable(n)** (UV / Independent Variable, IV) — der Faktor bzw. die Gruppierung, deren Effekt getestet wird.
+- **Kovariaten** — Störgrößen, die kontrolliert/adjustiert werden (z. B. Alter, Geschlecht, Baseline-Wert, wiederholte Messungen an derselben experimentellen Einheit).
+
+**Wann anzuwenden**:
+- Vor jeder Quick-/Light-/Full-Path-Analyse — ergänzt Step 0 (Data Profile) bzw. die Variable Confirmation im Light Path.
+- Vor jeder Power-/Fallzahlberechnung (Power Analysis Path) — die Variablenrollen müssen auch dann benannt werden, wenn nur Parameter statt Rohdaten vorliegen.
+
+**Dokumentationsformat** (im Bericht bzw. Analyseplan festhalten):
+
+| Rolle | Variable | Herkunft (Text/Frage) |
+|---|---|---|
+| AV (DV) | ... | ... |
+| UV (IV) | ... | ... |
+| Kovariate | ... | ... |
+
+**Wenn nicht spezifiziert**: als offene Annahme kennzeichnen und beim Nutzer nachfragen — nicht raten.
+
+---
+
 ## Complexity Assessment and Path Selection
 
 | Complexity | Analysis Type | Path | Confirmations |
