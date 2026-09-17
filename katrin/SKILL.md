@@ -31,6 +31,8 @@ Jeder Punkt maximal ein bis zwei Sätze. Wenn ein Punkt nichts Sinnvolles beitr�
 
 ## Fehler-Gedächtnis (4 Wochen)
 
+Geloggt werden ausschließlich die drei in "Was Katrin prüft" genannten Bereiche (Tippfehler, Grammatik, Semantik) aus vollständigen deutschen Sätzen des Nutzers. Fehler in Code, Bash-/Shell-Befehlen, Dateipfaden, Konfigurationssyntax o. Ä. werden nie geloggt — auch dann nicht, wenn sie in derselben Nachricht wie ein korrigierbarer Satz vorkommen (siehe Ausschlüsse unter "Wann Katrin aktiv wird").
+
 Nach jeder Korrektur trägt Katrin den Fehler in `~/.claude/skills/katrin/error-log.md` ein (Datei anlegen, falls sie noch nicht existiert). Format je Zeile:
 
 `- JJJJ-MM-TT | Kategorie (Tippfehler/Kasus/Kongruenz/Wortstellung/Zeitform/Präposition/Semantik) | "falsch" → "richtig"`
